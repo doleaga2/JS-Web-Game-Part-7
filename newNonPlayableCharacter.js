@@ -65,4 +65,3 @@ function sleep(time){
         setTimeout(resolve, time)
     })  
 }
-// add the ability to wait for walkEast

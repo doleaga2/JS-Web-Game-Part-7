@@ -11,6 +11,12 @@ npc.walkEast(3000)
 const inventory = newInventory()
 move(inventory).to(0, 0)
 
+async function moveNPC(){
+    await npc.walkEast(2000)
+    npc.walkSouth()
+}
+moveNPC()
+
 // Create everything else
 move(newImage('assets/tree.png')).to(200, 450)
 move(newImage('assets/pillar.png')).to(350, 250)
